@@ -1,0 +1,39 @@
+package com.adithya.flightservices.integration;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.adithya.flightservices.dto.CreateReservationRequest;
+import com.adithya.flightservices.entities.Flight;
+import com.adithya.flightservices.entities.Passenger;
+import com.adithya.flightservices.entities.Reservation;
+import com.adithya.flightservices.repos.FlightRepository;
+
+@RestController
+public class ReservationRestController {
+	
+	@Autowired
+	FlightRepository flightRepository;
+
+	@RequestMapping(value="/flights",method=RequestMethod.GET)
+	public List<Flight>findFlights() {
+		return flightRepository.findAll();
+	}
+	
+	@RequestMapping(value="/reservations",method=RequestMethod.POST)
+	public Reservation saveReservation(CreateReservationRequest request) {
+		Flight flight = flightRepository.findById(request.getFlightId()).get();
+		
+		Passenger passenger = new Passenger();
+		passenger.setFirstName(request.getPassengerFirstName());
+		passenger.setLastName(request.getPassengerLastName());
+		passenger.setMiddleName(request.getPassengerMiddleName());
+		passenger.setEmail(request.getPassengerEmail());
+		passenger.setPhone(request.getPassengerPhone());
+		return null;
+	}
+}

@@ -1,0 +1,16 @@
+package com.adithya.flightservices.integration;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.adithya.flightservices.entities.Flight;
+
+@RestController
+public class ReservationRestController {
+
+	public List<Flight>findFlights() {
+		return null;
+		
+	}
+}

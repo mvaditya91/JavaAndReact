@@ -1,0 +1,7 @@
+package com.adithya.flightservices.integration;
+
+public class CorsConfig {
+	public WebMvcConfigurer corsConfigurer() {
+		
+	}
+}

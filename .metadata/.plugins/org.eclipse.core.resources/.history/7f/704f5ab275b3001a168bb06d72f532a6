@@ -1,0 +1,29 @@
+package com.adithya.flightservices.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Reservation extends AbstractEntity{
+	
+	private boolean checkedIn;
+	private int numberOfBags;
+
+	public boolean isCheckedIn() {
+		return checkedIn;
+	}
+
+	public void setCheckedIn(boolean checkedIn) {
+		this.checkedIn = checkedIn;
+	}
+
+	public int getNumberOfBags() {
+		return numberOfBags;
+	}
+
+	public void setNumberOfBags(int numberOfBags) {
+		this.numberOfBags = numberOfBags;
+	}
+}

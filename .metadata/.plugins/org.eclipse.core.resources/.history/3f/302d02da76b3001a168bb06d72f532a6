@@ -1,0 +1,9 @@
+package com.adithya.flightservices.repos;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.adithya.flightservices.entities.Flight;
+
+public interface PassengerRepository extends JpaRepository<Flight, Integer> {
+
+}

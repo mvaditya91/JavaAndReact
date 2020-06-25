@@ -1,0 +1,16 @@
+package com.adithya.clinicals.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.adithya.clinicals.repos.ClinicalDataRepository;
+import com.adithya.clinicals.repos.PatientRepository;
+
+@RestController
+@RequestMapping("/api")
+public class ClinicalDataController {
+	
+	private ClinicalDataRepository clinicalDataRepository;
+	private PatientRepository patientRepository;
+
+}

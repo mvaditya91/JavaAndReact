@@ -1,0 +1,5 @@
+package com.adithya.clinicals.dto;
+
+public class ClinicalDataRequest {
+
+}

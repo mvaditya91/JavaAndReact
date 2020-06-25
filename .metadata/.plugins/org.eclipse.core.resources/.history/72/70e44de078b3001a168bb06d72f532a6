@@ -1,0 +1,5 @@
+package com.adithya.flightservices.dto;
+
+public class CreateReservationRequest {
+
+}

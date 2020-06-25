@@ -1,0 +1,7 @@
+package com.adithya.flightservices.dto;
+
+public class UpdateReservationRequest {
+	private int id;
+	private boolean checkIn;
+	private int numberOfBags;
+}

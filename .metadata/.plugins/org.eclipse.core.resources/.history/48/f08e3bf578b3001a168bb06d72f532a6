@@ -1,0 +1,13 @@
+package com.adithya.flightservices.dto;
+
+public class CreateReservationRequest {
+	private int flightId;
+	private String passengerFirstName;
+	private String passengerLastName;
+	private String passengerMiddleName;
+	private String passengerEmail;
+	private String passengerPhone;
+	private String cardNumber;
+	private String expirationDate;
+	private String securityCode;
+}

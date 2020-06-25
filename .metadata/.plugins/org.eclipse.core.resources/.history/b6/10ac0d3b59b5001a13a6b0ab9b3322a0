@@ -1,0 +1,20 @@
+package com.adithya.clinicals.dto;
+
+public class ClinicalDataRequest {
+
+	public Integer getPatientId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getComponentValue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
